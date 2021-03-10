@@ -16,7 +16,6 @@ class App extends React.Component{
             The leading stock information site on the web.
           </p>
         </header>
-        
       </div>
     );
   }
