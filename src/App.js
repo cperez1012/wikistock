@@ -1,8 +1,9 @@
 import logo from './WikiStock.png';
 import './App.css';
 import React from 'react';
+import { Route, Switch, withRouter } from 'react-router-dom';
 // import { Route } from 'react-router-dom';
-// import Stocks from './components/Stocks.js';
+import Stocks from './components/Stocks.js';
 
 class App extends React.Component{
 
@@ -15,7 +16,11 @@ class App extends React.Component{
           <p>
             The leading stock information site on the web.
           </p>
+
         </header>
+        <Switch>
+            <Route exact path = '/stocks' component = {Stocks}/>
+        </Switch>
       </div>
     );
   }
